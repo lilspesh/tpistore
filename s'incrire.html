@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s'inscrire.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="img/TPI.gif" alt="TPI">
+    </div>
+
+    <div class="form-box" id="register-form"></div>
+        <form action="inscription.php" method="post">
+            <h2>S'enregistrer</h2>
+            <input type="text" name="nom" placeholder="Enter your name">
+
+            <select name="country" id="" class="role">
+                <option value="">--Choisissez un pays--</option>
+                <option value="">Cameroun</option>
+                <option value="">Congo</option>
+                <option value="">Ghana</option>
+                <option value="">Gabon</option>
+                <option value="">Nigeria</option>
+            </select> <input type="tel" name="numero" placeholder="Enter number">
+
+            <input type="email" name="email" placeholder="Email" required>
+
+            <input type="password" name="motdepasse" placeholder="Password" required>
+
+            <button type="submit" name="register">Register</button>
+            <p>Je possede deja un compte? <a href="index.html">Login</a></p>
+        </form>
+    </div>
+
+</body>
+</html>

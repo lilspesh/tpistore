@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Paiement Mobile Money</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .payment-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .payment-container img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .payment-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .payment-container input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .payment-container button {
+      padding: 12px;
+      width: 100%;
+      background-color: #e26c0b;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .payment-container button:hover {
+      background-color: #ff7809;
+    }
+  </style>
+</head>
+<body>
+
+<div class="payment-container">
+  <!-- Remplacez l'image ci-dessous par un vrai logo si besoin -->
+  <img src="img/orange money.png" alt="Orange Money Logo">
+  
+  <h2>Paiement Orange money</h2>
+  <form action="traitement.php" method="POST">
+    <input type="text" name="nom" placeholder="Nom du compte" required>
+    <input type="text" name="Montant" placeholder="Montant a payer" required>
+    <input type="tel" name="phone" placeholder="Numéro de téléphone" required>
+    <button type="submit">Payer</button>
+  </form>
+</div>
+
+    <script>
+  // Interception du formulaire
+  document.getElementById("paymentForm").addEventListener("submit", function(event) {
+    const confirmation = confirm("Confirmez-vous le paiement ?");
+    if (!confirmation) {
+      event.preventDefault(); // Empêche l'envoi du formulaire
+      alert("Paiement annulé.");
+    }
+  });
+</script>
+
+</body>
+</html>

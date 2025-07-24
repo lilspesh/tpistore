@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement MTN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md text-center">
+    <h2 class="text-xl font-bold mb-4">Confirmation de Paiement MTN</h2>
+
+    <p class="mb-4">Montant : <strong>5 000 FCFA</strong></p>
+    <p class="mb-6">Numéro : <strong>+225 07 00 00 00</strong></p>
+
+    <div class="space-y-3">
+      <button onclick="window.location.href='confirmation.html'" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold p-3 rounded-lg">
+        Confirmer le paiement
+      </button>
+
+      <button onclick="window.location.href='index.html'" class="w-full bg-gray-300 hover:bg-gray-400 text-black font-semibold p-3 rounded-lg">
+        Annuler
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

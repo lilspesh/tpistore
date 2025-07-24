@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #095fb4;
+    margin-top: -30px;
+}
+.logo img{
+    width: 145px;
+}
+.navtext{
+    flex: 1;
+    text-align: right;
+}
+
+.navtext ul button{
+    background: rgb(255, 255, 255);
+    color: rgb(80, 125, 221);
+    padding: 8px 30px;
+    border-radius: 30px;
+    border-style: none;
+    margin-bottom: 15px;
+}
+.navtext ul button a{
+    text-decoration: none;
+    color: #004080;
+}
+.navtext ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.navtext ul ol{
+    text-decoration: none;
+    background: aqua;
+    color: black;
+    border-radius: 30px;
+}
+.navtext ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.container{
+    max-width: 2000px;
+    margin: 20px auto;
+    padding-left: -200px;
+    padding-right: -300px;
+}
+.rouge{
+    color: rgb(16, 99, 253);
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 200px;
+}
+.col-2 img{
+    width: 80%;
+    margin-left: 100px;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 30px;
+    background: rgb(10, 116, 238);
+    color: antiquewhite;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.col-2 h1{
+    font-size: 40px;
+}
+.col-2 p{
+    font-size: 20px;
+}
+.header-section{
+    background: radial-gradient(#fff, #eaf2fb);
+    margin-top: 30px;
+}
+.navbar .cart-icon {
+    font-size: 30px;
+    color: black;
+}
+.navbar .cart-icon .cart-item-count {
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    background: #e35f26;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    display: none;
+}
+
+footer {
+      background-color: #313131;
+      color: #fff;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 1rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin: 0.5rem 0;
+    }
+
+    .footer-section a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }

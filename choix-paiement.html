@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choix du Paiement</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .payment-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .payment-container img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .payment-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .payment-container input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .button-mobile {
+      padding: 12px;
+      width: 100%;
+      background-color: #f7d335;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(15, 13, 13);
+      cursor: pointer;
+    }
+
+    .button-om {
+      border-radius: 20px;
+      padding: 10px;
+      width: 100%;
+      background-color: #111110;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .button-om:hover{
+      background-color: rgb(221, 141, 22);
+      color: black;
+    }
+
+    .button-mobile:hover{
+      background-color: black;
+      color: #f0d331;
+    }
+  </style>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="payment-container">
+    <h1 class="text-2xl font-bold mb-6">Sélectionnez un mode de paiement</h1>
+
+    <div class="space-y-4">
+      <!-- MTN Money -->
+      <button onclick="window.location.href='mobilemoney.html'" class="button-mobile">
+        <span class="text-lg font-semibold">Payer avec MTN Money</span>
+      </button><br><br>
+
+      <!-- Orange Money -->
+      <button onclick="window.location.href='orangemoney.html'" class="button-om">
+        <span class="text-lg font-semibold">Payer avec Orange Money</span>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
